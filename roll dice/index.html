@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+            color: rgb(144, 245, 145);
+            font-size: 35px;
+            padding: 30px;
+            font-weight: 1000;
+        }
+        #btn{
+            color: white;
+            background-color: slateblue;
+            text-align: center;
+            font-size: 28px;
+            border: 2px solid greenyellow;
+            border-radius: 12px;
+            padding: 15px 15px;
+            margin-top: -55px;
+        
+        }
+        #btn:hover{
+            background-color: darkviolet;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 0px 20px 50px gray;
+        }
+        .container{
+            text-align: center;
+            border-radius: 15px;
+            background-color: whitesmoke;
+            height: 430px;
+            width: 350px;
+           margin-left:570px ;
+        }
+        #output{
+            font-size: 50px;
+            text-align: center;
+            width: 350px;
+            height: 80px;
+            background-color: rgb(241, 238, 238);
+            display: none;
+            text-align: center;
+            border-radius: 12px;
+            margin-top: 70px;
+            box-shadow: 0px 20px 50px gray;
+            margin-bottom: 20px;
+        }
+        .symbol{
+            font-size: 100px;
+            text-align: center;     
+            margin-top: -20px;
+            animation: roll 10s infinite linear;
+            transition: transform 0.5s ease-out;
+        }
+        @keyframes roll {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+    <h1> dice roll simulator</h1>
+    <p class="symbol">&#9861</p>
+    <button id="btn" onclick="rolld()">roll dice</button>
+    <p id="output"></p>
+    <p id="output"></p>
+    <p id="output"></p>
+    <p id="output"></p>
+    <p id="output"></p>
+    <p id="output"></p>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
